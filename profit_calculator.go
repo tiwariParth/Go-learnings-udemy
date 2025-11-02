@@ -7,26 +7,31 @@ package main
 // func main() {
 // 	fmt.Println("Calculate your profits!")
 
-// 	var revenue float64
-// 	var expenses float64
-// 	var taxRate float64
+// 	// var revenue float64
+// 	// var expenses float64
+// 	// var taxRate float64
 
-// 	fmt.Print("Enter Your Revenue: ")
-// 	fmt.Scan(&revenue)
+// 	revenue := getUserInfo("Enter your reveneue: ")
+// 	expenses := getUserInfo("Enter your expense: ")
+// 	taxRate := getUserInfo("Enter your tax rate: ")
 
-// 	fmt.Print("Enter your Expenses: ")
-// 	fmt.Scan(&expenses)
+// 	calculateProfit(revenue, expenses, taxRate)
+// }
 
-// 	fmt.Print("Enter your tax rate: ")
-// 	fmt.Scan(&taxRate)
+// func getUserInfo(infoText string) float64 {
+// 	var userInput float64
+// 	fmt.Print(infoText)
+// 	fmt.Scan(&userInput)
+// 	return userInput
+// }
 
+// func calculateProfit(revenue, expenses, taxRate float64) {
 // 	EBT := revenue - expenses
 // 	fmt.Printf("Your earnings without taxes: %v \n", EBT)
 
-// 	profit := EBT * (1 - taxRate/100)
+// 	profit := EBT * (1 - expenses/100)
 // 	fmt.Printf("Your profits are: %v \n", profit)
 
 // 	ratio := EBT / profit
 // 	fmt.Printf("Your total ration: %v\n", ratio)
-
 // }
